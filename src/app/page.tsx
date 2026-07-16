@@ -73,7 +73,7 @@ export default function HomePage() {
             ].map((cat) => (
               <Link
                 key={cat.name}
-                href={`/experiences?category=${cat.name.toLowerCase()}`}
+                href={`/experiences?category=${cat.name}`}
                 className={`flex flex-col items-center gap-2 rounded-2xl border p-6 text-center transition-all hover:shadow-md hover:-translate-y-0.5 ${cat.color}`}
               >
                 <span className="text-3xl">{cat.emoji}</span>
